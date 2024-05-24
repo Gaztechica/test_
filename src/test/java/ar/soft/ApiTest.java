@@ -22,7 +22,6 @@ import java.util.Objects;
 
 public class ApiTest {
 
-//    ==================== тренировочный ===============================
     private static class Pokemon {
         public String name;
         public String url;

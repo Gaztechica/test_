@@ -21,39 +21,6 @@ public class AutorisaitionTest extends BaseTest {
 //=============================== регистрация нового пользователя ====================================
 
 
-//  не работает тест рамдомные email и создавать/удалять пользователей  регистрация
-
-
-//    @Test
-//    public void randomAutorisationTest () throws InterruptedException {
-//
-//        driver.findElement(By.xpath("//h2[@class='ant-typography h2_m Login__restore-text']")).click();
-//
-//        driver.switchTo().newWindow(WindowType.TAB).get("https://tmailor.com/ru");
-//
-//
-//        WebElement userRolesc = driver.findElement(By.xpath("//input[@class='form-control shadow-none']"));
-//
-//        userRolesc.sendKeys(Keys.LEFT_CONTROL + "c");
-////        driver.findElement(By.xpath("//button[@class='btn btn-light shadow-sm btn-email border rounded-5 m-2'][contains(.,' Копировать')]")).click();
-////        WebDriver driver = new ChromeDriver();
-////        Thread.sleep(2000);
-////        driver.get(URL);
-////        driver.findElement(By.xpath("////*[@id="ajax-html"]/div[1]/div/div/div[1]/div[1]/div[3]/button[1]")).click();
-////
-//
-//        ArrayList<String> newTab = new ArrayList<>(driver.getWindowHandles());
-//        driver.switchTo().window(newTab.get(0));
-//
-//        driver.findElement(By.xpath("//input[@id='RestorePassword_email']")).sendKeys(Keys.LEFT_CONTROL + "v");
-////        driver.findElement(By.xpath(INPUT_EMAIL)).sendKeys(EMAIL);
-//
-//        // .sendKeys(EMAIL);
-//        driver.findElement(By.xpath(BTN_PASSWORD)).click();
-//
-//
-//    }
-
     @Parameters({ "user_role", "isActive" })
     @Test
     public void testUserRole(@Optional("Admin") @NotNull String role, @Optional("true") Boolean isActive) {
