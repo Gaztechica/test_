@@ -23,7 +23,6 @@ public class TypesWorkSidebarTest extends BaseTest {
 
     @Test
     public void AddTypesWork() {
-//        String AddWork =
         new TypesWorkSidebarPage(getDriver())
                 .progect()
                 .typesWorkSidebarClick()
@@ -32,5 +31,4 @@ public class TypesWorkSidebarTest extends BaseTest {
                 .btnAddWorkClick();
     }
 
-//    удалить редактиров поиск при добавление
 }
